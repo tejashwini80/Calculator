@@ -1,0 +1,50 @@
+Class name can be className={`${styles['kg-item']} list-group-item`}
+//Fragment=<></>
+//For childeren in between <app><h1>Hi</><app/> use props.Children or take them as childern instead of props in parameter
+// to align all the elements of a paren give     float:right
+//Passing functions to parents by child
+//onKeyDown=for pressing enter or any other keys
+
+ 
+ eval(val)
+ setVal(res)= evaluates the string and prints the result
+ */React icons
+ install react developer tools for browser
+React merits={virtual dom,Reconciliation process(re-creating th actual dom)}
+React is building component and reactDOM is converting it into actual DOm on Browser
+useRef :=it allows access to dom elemenys and retains mutable values without re-renders   ,,ref={todoNameElement} this is an reference 
+todo=useRef();
+todo.current.value
+
+
+Context API
+*common shared storage among all
+*const Con=createContext(initial value)
+   <Con.Provider  value={[]}>
+     <TodoItem/>
+     <Button/>
+   </Con.Provider>
+   *value can be array or object  value={{
+    todoItem:todoItem,
+    addNewItem,             // key n value are same use only single name
+    deleteItem,
+   }}
+
+   USE REDUCER
+   * hook that offers more control over state operation compared to useState ,specially for complex state logic
+   *components
+    1.reducer: a pure(does not care n cahne outside the fun ) function that takes current state and an action and returns new state
+    2.action : an object describing what happened,typically having a type property
+    * const [state,dispatch]=useReducer(reducer,initial state)
+    i. dispatch: actions are dispatched using this function which invokes the reducer with the current state and the given action.
+    ii. the reducer will get two parameters reducer(current state,action)
+
+    **payload:{
+      itemName,
+      itemDueDate 
+    }
+
+***  useState:basic things
+     useContext:more props.more usage,ore components
+     useRef:
+     useReducer:lengthy object,more complex and state updation is based on previous state ,n whole object is edited then use it

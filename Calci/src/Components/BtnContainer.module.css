@@ -1,0 +1,17 @@
+.btnContainer{
+  padding: 5px;
+  width: 220px;
+}
+.btn{
+padding: 15px;
+margin: 5px;
+font-size: 25px;
+color: white;
+background-color: rgb(90, 88, 88);
+border-radius: 8px;
+height: 55px;
+width: 55px;
+text-align: center;
+border: none;
+cursor: pointer;
+}
